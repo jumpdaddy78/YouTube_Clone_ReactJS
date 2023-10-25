@@ -15,21 +15,14 @@ import DeveloperModeIcon from '@mui/icons-material/DeveloperMode';
 export const logo = 'https://vectorseek.com/wp-content/uploads/2022/02/Blue-Youtube-Logo-Vector.svg-.png';
 
 export const categories = [
-  { name: 'New', icon: <HomeIcon />, },
+  { name: 'Popular', icon: <HomeIcon />, },
   { name: 'ReactJS', icon: <CodeIcon />, },
   { name: 'NextJS', icon: <CodeIcon />, },
-  { name: 'Gaming', icon: <SportsEsportsIcon />, },
-  { name: 'Live', icon: <LiveTvIcon />, },
-  { name: 'Sport', icon: <FitnessCenterIcon />, },
-  { name: 'Crypto', icon: <DeveloperModeIcon />, },
-  { name: 'Music', icon: <MusicNoteIcon /> },
-  { name: 'Education', icon: <SchoolIcon />, },
-  { name: 'Podcast', icon: <GraphicEqIcon />, },
-  { name: 'Movie', icon: <OndemandVideoIcon />, },
-  { name: 'Fashion', icon: <CheckroomIcon />, },
-  { name: 'Beauty', icon: <FaceRetouchingNaturalIcon />, },
-  { name: 'Comedy', icon: <TheaterComedyIcon />, },
-  { name: 'Gym', icon: <FitnessCenterIcon />, }
+  { name: 'Angular', icon: <SportsEsportsIcon />, },
+  { name: 'Flutter', icon: <LiveTvIcon />, },
+  { name: 'Vue', icon: <FitnessCenterIcon />, },
+  { name: 'Web 3.0', icon: <DeveloperModeIcon />, },
+  { name: 'DevOps', icon: <MusicNoteIcon /> },
 ];
 
 export const demoThumbnailUrl = 'https://images.template.net/wp-content/uploads/2016/04/27133811/Youtube-Thumbnail1.jpg';

@@ -4,8 +4,8 @@ import ReactPlayer from "react-player";
 import { Typography, Box, Stack } from "@mui/material";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 
-import { Videos } from "./";
-import { fetchFromAPI } from "../utils/fetchFromAPI";
+import Videos from "./Videos";
+import { fetchFromAPI } from "../utils/FetchFromAPI";
 
 const VideoDetail = () => {
   const [videoDetail, setVideoDetail] = useState(null);
@@ -25,35 +25,42 @@ const VideoDetail = () => {
   const { snippet: { title, channelId, channelTitle }, statistics: { viewCount, likeCount } } = videoDetail;
 
   return (
-    <Box minHeight="95vh">
-      <Stack direction={{ xs: "column", md: "row" }}>
-        <Box flex={1}>
-          <Box sx={{ width: "100%", position: "sticky", top: "86px" }}>
-            <ReactPlayer url={`https://www.youtube.com/watch?v=${id}`} className="react-player" controls />
-            <Typography color="#fff" variant="h5" fontWeight="bold" p={2}>
-              {title}
-            </Typography>
-            <Stack direction="row" justifyContent="space-between" sx={{ color: "#fff" }} py={1} px={2} >
-              <Link to={`/channel/${channelId}`}>
-                <Typography variant={{ sm: "subtitle1", md: 'h6' }}  color="#fff" >
+    <>
+  
+
+    <div className="flex justify-center flex-row h-[calc(100%-56px)] bg-white dark:bg-black">
+      <div className="w-full max-w-[1280px] flex flex-col lg:flex-row">
+        <div className="flex flex-col lg:w-[calc(100%-350px)] xl:w-[calc(100%-400px)] px-4 py-3 lg:py-6 overflow-y-auto">
+          <div className="py-2 my-2 h-[200px] md:h-[400px] lg:h-[400px] xl:h-[550px] ml-[-16px] lg:ml-0 mr-[-16px] lg:mr-0">
+            <ReactPlayer
+             url={`https://www.youtube.com/watch?v=${id}`} className="react-player" controls
+              width="100%"
+              height="100%"
+              style={{ backgroundColor: "#00000" }}
+              playing={true}
+            />
+          </div>
+          <div className="text-black dark:text-white font-semibold text-xl md:text-xl  line-clamp-2 mt-4">
+            {title}
+          </div>
+          <div className="flex justify-between flex-col md:flex-row mt-2">
+         
+             
+              <div className="flex flex-col ">
+                <div className="text-black dark:text-white text-md font-semibold flex items-center">
                   {channelTitle}
-                  <CheckCircleIcon sx={{ fontSize: "12px", color: "gray", ml: "5px" }} />
-                </Typography>
-              </Link>
-              <Stack direction="row" gap="20px" alignItems="center">
-                <Typography variant="body1" sx={{ opacity: 0.7 }}>
-                  {parseInt(viewCount).toLocaleString()} views
-                </Typography>
-                <Typography variant="body1" sx={{ opacity: 0.7 }}>
-                  {parseInt(likeCount).toLocaleString()} likes
-                </Typography>
-              </Stack>
-            </Stack>
-          </Box>
-        </Box>
-      
-      </Stack>
-    </Box>
+                
+         
+               
+              </div>
+            </div>
+       
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    </>
   );
 };
 
