@@ -9,4 +9,4 @@ Visit Site here <a href="https://youtubee2023.netlify.app/">YouTube Clone</a>
 <br/>
 <br/>
 
-![youtube](https://github.com/Coder-Rushabh/YouTube_Clone_ReactJS/assets/47267236/c9c7e4e9-5181-45dc-84be-2f5ca1a3b584)
+![yt](https://github.com/Coder-Rushabh/YouTube_Clone_ReactJS/assets/47267236/a445146a-d469-45c1-abc7-4509ec88a5b3)
