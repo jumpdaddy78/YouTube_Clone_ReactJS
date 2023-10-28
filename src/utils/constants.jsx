@@ -1,28 +1,21 @@
-import MusicNoteIcon from '@mui/icons-material/MusicNote';
 import HomeIcon from '@mui/icons-material/Home';
-import CodeIcon from '@mui/icons-material/Code';
-import OndemandVideoIcon from '@mui/icons-material/OndemandVideo';
-import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
-import LiveTvIcon from '@mui/icons-material/LiveTv';
-import SchoolIcon from '@mui/icons-material/School';
-import FaceRetouchingNaturalIcon from '@mui/icons-material/FaceRetouchingNatural';
-import CheckroomIcon from '@mui/icons-material/Checkroom';
-import GraphicEqIcon from '@mui/icons-material/GraphicEq';
-import TheaterComedyIcon from '@mui/icons-material/TheaterComedy';
-import FitnessCenterIcon from '@mui/icons-material/FitnessCenter';
-import DeveloperModeIcon from '@mui/icons-material/DeveloperMode';
 
-export const logo = 'https://vectorseek.com/wp-content/uploads/2022/02/Blue-Youtube-Logo-Vector.svg-.png';
 
 export const categories = [
   { name: 'Popular', icon: <HomeIcon />, },
-  { name: 'ReactJS', icon: <CodeIcon />, },
-  { name: 'NextJS', icon: <CodeIcon />, },
-  { name: 'Angular', icon: <SportsEsportsIcon />, },
-  { name: 'Flutter', icon: <LiveTvIcon />, },
-  { name: 'Vue', icon: <FitnessCenterIcon />, },
-  { name: 'Web 3.0', icon: <DeveloperModeIcon />, },
-  { name: 'DevOps', icon: <MusicNoteIcon /> },
+  { name: 'ReactJS', icon: <HomeIcon />, },
+  { name: 'NextJS', icon: <HomeIcon />, },
+  { name: 'Angular', icon: <HomeIcon />, },
+  { name: 'Flutter', icon: <HomeIcon />, },
+  { name: 'Vue', icon: <HomeIcon />, },
+  { name: 'JQuery', icon: <HomeIcon />, },
+  { name: 'OpenUI5', icon: <HomeIcon />, },
+  { name: 'Bootstrap', icon: <HomeIcon />, },
+  { name: 'Express JS', icon: <HomeIcon />, },
+  { name: 'Django', icon: <HomeIcon />, },
+  { name: 'Python', icon: <HomeIcon />, },
+  { name: 'Golang', icon: <HomeIcon />, },
+  { name: 'DevOps', icon: <HomeIcon /> },
 ];
 
 export const demoThumbnailUrl = 'https://images.template.net/wp-content/uploads/2016/04/27133811/Youtube-Thumbnail1.jpg';
